@@ -1,8 +1,8 @@
 application:
     build: code
     volumes:
-        - ./symfony:/var/www/symfony
-        - ./logs/symfony:/var/www/symfony/app/logs
+        - ./symfony:/home/sonia/www/katnisso/symfony
+        - ./logs/symfony:/home/sonia/www/katnisso/symfony/app/logs
     tty: true
 db:
     image: mysql
