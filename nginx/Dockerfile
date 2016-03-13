@@ -5,7 +5,7 @@ MAINTAINER Clement Guinet <guinet.clement@gmail.com>
 RUN apt-get update && apt-get install -y nginx
 
 ADD nginx.conf /etc/nginx/
-ADD symfony.conf /etc/nginx/sites-available/
+ADD katnisso.conf /etc/nginx/sites-available/
 
 RUN ln -s /etc/nginx/sites-available/katnisso.conf /etc/nginx/sites-enabled/katnisso
 RUN rm /etc/nginx/sites-enabled/default
